@@ -1,4 +1,6 @@
 #include <SDL2/SDL.h>
+#include <stdio.h>
+#include <iostream>
 
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
@@ -14,7 +16,7 @@ int main(int argc, char* args[])
 	//Initialize SDL
 	if( SDL_Init( SDL_INIT_VIDEO ) < 0 )
 	{
-		print( "SDL could not initialize! SDL_Error: %s\n", SDL_GetError() );
+		printf( "SDL could not initialize! SDL_Error: %s\n", SDL_GetError() );
 	}
 	else
 	{
