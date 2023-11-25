@@ -65,14 +65,17 @@ void Game::handleEvents()
 void Game::render()
 {
 	SDL_RenderClear(renderer);
-	SDL_RenderCopy(renderer, playerTex, NULL, NULL);
+	SDL_RenderCopy(renderer, playerTex, NULL, &destR);
 	SDL_RenderPresent(renderer);
 }
 
 void Game::update()
 {
-	destR.h = 64;
-	destR.w = 64;
+	cunt++;
+	destR.h = 32;
+	destR.w = 32;
+	destR.x = cunt;
+	std::cout << cnt << std::endl;
 }
 
 void Game::clean()
