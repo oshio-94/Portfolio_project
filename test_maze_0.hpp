@@ -22,7 +22,7 @@ public:
     void render();
     void clean();
 
-    bool running();
+    bool running() {return isRunning;}
 
 
 
