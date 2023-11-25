@@ -7,7 +7,7 @@
 
 #include "test_maze_0.hpp"
 
-Game::Gamer()
+Game::Game()
 {}
 Game::~Game()
 {}
@@ -17,7 +17,7 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
      int flags = 0;
      if(fullscreen)
      {
-	     flags = SLD_WINDOW_FULLSCREEN;
+	     flags = SDL_WINDOW_FULLSCREEN;
      }
      if(SDL_Init(SDL_INIT_EVERYTHING) == 0)
      {
@@ -32,7 +32,7 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
 	     renderer = SDL_CreateRenderer(window, -1, 0);
 	     if(renderer)
 	     {
-		     SDL_SetRendererDrawColor(renderer, 255, 255, 255, 255);
+		     SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
 		     std::cout << "Renderer created" << std::endl;
 	     }
 
@@ -42,7 +42,7 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
      }	
 }
 
-void Game::handleEvent()
+void Game::handleEvents()
 {
     SDL_Event event;
     SDL_PollEvent(&event);
@@ -59,7 +59,7 @@ void Game::handleEvent()
 void Game::render()
 {
 	SDL_RenderClear(renderer);
-	SDL_RenderPresent(renerder);
+	SDL_RenderPresent(renderer);
 }
 
 void Game::update()
@@ -70,5 +70,5 @@ void Game::clean()
 	SDL_DestroyWindow(window);
 	SDL_DestroyRenderer(renderer);
 	SDL_Quit();
-	std::cout << "Game Cleared" {{ std::endl;
+	std::cout << "Game Cleared" << std::endl;
 }
