@@ -71,10 +71,10 @@ void Game::render()
 
 void Game::update()
 {
-	cunt++;
+	cnt++;
 	destR.h = 32;
 	destR.w = 32;
-	destR.x = cunt;
+	destR.x = cnt;
 	std::cout << cnt << std::endl;
 }
 
