@@ -8,6 +8,7 @@
 #include "test_maze_0.hpp"
 
 SDL_Texture* playerTex;
+SDL_Rect srcR, destR;
 
 Game::Game()
 {}
@@ -69,7 +70,10 @@ void Game::render()
 }
 
 void Game::update()
-{}
+{
+	destR.h = 64;
+	destR.w = 64;
+}
 
 void Game::clean()
 {
