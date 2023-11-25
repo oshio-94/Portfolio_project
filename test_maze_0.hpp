@@ -9,6 +9,7 @@
 #define test_maze_0_hpp
 #include <SDL2/SDL.h>
 #include <stdio.h>
+#include <iostream>
 
 class Game {
 
