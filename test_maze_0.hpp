@@ -8,6 +8,7 @@
 #ifndef test_maze_0_hpp
 #define test_maze_0_hpp
 #include <SDL2/SDL.h>
+#include <SDL2_image/SDL_image.h>
 #include <stdio.h>
 #include <iostream>
 
