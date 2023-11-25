@@ -7,6 +7,8 @@
 
 #include "test_maze_0.hpp"
 
+SDL_Texture* playerTex;
+
 Game::Game()
 {}
 Game::~Game()
@@ -39,7 +41,8 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 	     isRunning = true;
      } else {
 	     isRunning = false;
-     }	
+     }
+     SDL_Surface* tmpSurface = IMG_Load("");
 }
 
 void Game::handleEvents()
