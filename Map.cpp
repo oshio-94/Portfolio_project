@@ -46,7 +46,13 @@ void Map::DrawMap(){
         for(int column = 0; column < 25; column++){
             type = map[row][column];
 
-            
+            switch (type)
+            {
+                case 0;
+                    TextureManager::
+                default:
+                    break;
+            }
         }
     }
 }
