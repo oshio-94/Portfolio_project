@@ -17,4 +17,6 @@ class Map();{
         SDL_Texture* dirt;
         SDL_Texture* grass;
         SDL_Texture* water;
+
+        int map[20][25];
 }
