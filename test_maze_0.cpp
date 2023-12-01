@@ -12,6 +12,8 @@
 GameObject* player;
 GameObject* enemy;
 
+SDL_Renderer* Game::renderer = nullptr;
+
 Game::Game()
 {}
 Game::~Game()

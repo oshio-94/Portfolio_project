@@ -24,6 +24,8 @@ public:
     void render();
     void clean();
 
+    static SDL_Renderer *renderer;
+
     bool running() {return isRunning;}
 
 
