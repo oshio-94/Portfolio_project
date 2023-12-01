@@ -9,7 +9,8 @@
 #include "textureManager.h"
 #include "GameObject.h"
 
-GameObject* player
+GameObject* player;
+GameObject* enemy;
 
 Game::Game()
 {}
@@ -45,7 +46,8 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 	     isRunning = false;
      }
 
-player = new GameObject("assets/texture.png", renderer);
+player = new GameObject("assets/texture.png", renderer,0,0);
+player = new GameObject("assets/enemy.png", rendered,50,50);
 
 }
 
