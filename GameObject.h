@@ -1,5 +1,5 @@
 
-
+#include "test_maze_0.hpp"
 class GameObject {
     
     public:
