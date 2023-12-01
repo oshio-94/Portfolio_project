@@ -48,8 +48,8 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 	     isRunning = false;
      }
 
-player = new GameObject("assets/texture.png", renderer,0,0);
-player = new GameObject("assets/enemy.png", rendered,50,50);
+player = new GameObject("assets/texture.png", 0, 0);
+player = new GameObject("assets/enemy.png", 50, 50);
 }
 
 void Game::handleEvents()
