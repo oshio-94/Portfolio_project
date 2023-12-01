@@ -48,7 +48,6 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 
 player = new GameObject("assets/texture.png", renderer,0,0);
 player = new GameObject("assets/enemy.png", rendered,50,50);
-
 }
 
 void Game::handleEvents()
@@ -69,6 +68,7 @@ void Game::render()
 {
 	SDL_RenderClear(renderer);
 	player->Render();
+	enemy->Render();
 	/*SDL_RenderCopy(renderer, playerTex, NULL, &destR);*/
 	SDL_RenderPresent(renderer);
 }
@@ -76,6 +76,7 @@ void Game::render()
 void Game::update()
 {
 	player->Update();
+	enemy->Update();
 	/*cnt++;
 	destR.h = 32;
 	destR.w = 32;
