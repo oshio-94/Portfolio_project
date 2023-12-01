@@ -64,7 +64,7 @@ void Game::handleEvents()
 		    isRunning = false;
 		    break;
 
-	    defaault:
+	    default:
 		    break;
     }
 }
@@ -72,6 +72,7 @@ void Game::handleEvents()
 void Game::render()
 {
 	SDL_RenderClear(renderer);
+	map->DrawMap();
 	player->Render();
 	enemy->Render();
 	/*SDL_RenderCopy(renderer, playerTex, NULL, &destR);*/
