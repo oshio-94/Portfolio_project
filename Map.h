@@ -1,7 +1,7 @@
 #pragma once
 #include "test_maze_0.hpp"
 
-class Map();{
+class Map {
     public:
         Map();
         ~Map();
@@ -19,4 +19,4 @@ class Map();{
         SDL_Texture* water;
 
         int map[20][25];
-}
+};

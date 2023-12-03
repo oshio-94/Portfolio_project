@@ -1,4 +1,5 @@
 #include "Map.h"
+#include "textureManager.h"
 
 
 int lvl1[20][25] = {
@@ -22,8 +23,9 @@ int lvl1[20][25] = {
     {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
     {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
     {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-}
-Map::Map();{
+};
+
+Map::Map() {
     dirt = textureManager::LoadTexture("assets/dirt.png");
     grass = textureManager::LoadTexture("assets/grass.png");
     water = textureManager::LoadTexture("assets/water.png");
@@ -40,7 +42,7 @@ Map::Map();{
 void Map::LoadMap(int arr[20][25]){
     for (int row = 0; row < 20; row++){
         for(int column = 0; column < 25; column++){
-            map[row][column] = arr[row][column]
+            map[row][column] = arr[row][column];
         }
     }
 }
@@ -57,13 +59,13 @@ void Map::DrawMap(){
             switch (type)
             {
                 case 0:
-                    TextureManager::Draw(water, src, dest);
+                    textureManager::Draw(water, src, dest);
                     break;
                 case 1:
-                    TextureManager::Draw(grass, src, dest);
+                    textureManager::Draw(grass, src, dest);
                     break;
                 case 2:
-                    TextureManager::Draw(dirt, src, dest);
+                    textureManager::Draw(dirt, src, dest);
                     break;
                 default:
                     break;

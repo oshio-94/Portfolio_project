@@ -12,7 +12,7 @@
 
 GameObject* player;
 GameObject* enemy;
-Map* map
+Map* map;
 
 SDL_Renderer* Game::renderer = nullptr;
 

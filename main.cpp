@@ -8,7 +8,7 @@ int main(int argc, const char * arv[]) {
 	const int frameDelay = 1000 / FPS;
 
 	Uint32 frameStart;
-	int frameTime
+    int frameTime;
 
 	game = new Game();
 
