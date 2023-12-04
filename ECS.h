@@ -24,7 +24,7 @@ inline ComponentID getComponentTypeID(){
 
 template <typename T> inline ComponentID getComponentID() noexcept{
     static CompoxxnentID typeID = getComponentID();
-    return typeID();
+    return typeID;
 }
 
 constexpr std::size_t maxComponents = 32;
