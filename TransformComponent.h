@@ -24,7 +24,5 @@ class TransformComponent : public Component{
         }*/
 
         void update() override {
-            xpos++;
-            ypos++;
         }
 };
