@@ -10,6 +10,9 @@
 #include "GameObject.h"
 #include "Map.h"
 
+#include "ECS.h"
+#include "Components.h"
+
 GameObject* player;
 GameObject* enemy;
 Map* map;
