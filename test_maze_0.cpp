@@ -17,8 +17,7 @@ Map* map;
 Manager manager;
 
 SDL_Renderer* Game::renderer = nullptr;
-SDL_Event event;
-
+SDL_Event Game::event;
 
 auto& player(manager.addEntity());
 
