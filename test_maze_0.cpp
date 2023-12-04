@@ -62,6 +62,7 @@ map = new Map();
 //ecs implementation
 player.addComponent<TransformComponent>();
 player.addComponent<SpriteComponent>("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/player.png");
+player.addComponent<KeyboardController>();
 
 //newPlayer.getComponent<PositionComponent>().setPos(500, 500);
 }
