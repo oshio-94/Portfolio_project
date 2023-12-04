@@ -96,7 +96,7 @@ void Game::update()
 	//enemy->Update();
 	manager.refresh();
 	manager.update();
-	player.getcomponent<TransformComponent>().position.Add(Vector2D(5, 0));
+	player.getComponent<TransformComponent>().position.Add(Vector2D(5, 0));
 
 	if(player.getComponent<TransformComponent>().position.x() > 100){
         player.getComponent<SpriteComponent>().setTex("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/enemy.png");
