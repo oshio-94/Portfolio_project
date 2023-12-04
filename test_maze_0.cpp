@@ -60,6 +60,7 @@ enemy  = new GameObject("assets/enemy.png", 50, 50);
 map = new Map();
 
 newPlayer.addComponent<PositionComponent>();
+//newPlayer.getComponent<PositionComponent>().setPos(500, 500);
 }
 
 void Game::handleEvents()
