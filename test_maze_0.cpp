@@ -8,7 +8,7 @@
 #include "test_maze_0.hpp"
 #include "textureManager.h"
 #include "Map.h"
-#include "ECS/Components.h"
+#include "Components.h"
 
 //GameObject* player;
 //GameObject* enemy;
@@ -97,8 +97,8 @@ void Game::update()
 	manager.update();
 
 	if(player.getComponent<PositionComponent>().x() > 100){
-		player.getComponent<SpriteComponent>().setTex("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/enemy.png")
-	}
+        player.getComponent<SpriteComponent>().setTex("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/enemy.png");
+    }
 	/*std::cout << newPlayer.getComponent<positionComponent>().x() << "," << 
 	    newPlayer.getComponent<positionComponent>().y() << std::endl;
 	cnt++;

@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Components.h"
-#include "SDL.h"
+#include "SDL2/SDL.h"
 
 class SpriteComponent : public Component{
     private:
@@ -35,4 +35,4 @@ class SpriteComponent : public Component{
         void draw() override {
             textureManager::Draw(texture, srcRect, destRect);
         }
-}
+};
