@@ -1,17 +1,16 @@
 #pragma once
 
 #include "Components.h"
+#include "Vector2D.h"
 
 class TransformComponent : public Component{
-    private:
-        int xpos;
-        int ypos;
 
     public:
+        Vector2D position;
 
         TransformComponent(){
-            xpos = 0;
-            ypos = 0;
+            position.x = 0.0f;
+            posotion.y = 0.0f;
         }
 
         TransformComponent(int x, int y){
