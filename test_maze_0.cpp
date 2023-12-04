@@ -9,6 +9,7 @@
 #include "textureManager.h"
 #include "Map.h"
 #include "Components.h"
+#include "Vector2D.h"
 
 //GameObject* player;
 //GameObject* enemy;
@@ -58,7 +59,7 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 map = new Map();
 
 //ecs implementation
-player.addComponent<TransformComponent>(100, 500);
+player.addComponent<TransformComponent>();
 player.addComponent<SpriteComponent>("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/player.png");
 
 //newPlayer.getComponent<PositionComponent>().setPos(500, 500);
@@ -95,8 +96,9 @@ void Game::update()
 	//enemy->Update();
 	manager.refresh();
 	manager.update();
+	player.getcomponent<TransformComponent>().position.Add(Vector2D(5, 0));
 
-	if(player.getComponent<TransformComponent>().x() > 100){
+	if(player.getComponent<TransformComponent>().position.x() > 100){
         player.getComponent<SpriteComponent>().setTex("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/enemy.png");
     }
 	/*std::cout << newPlayer.getComponent<positionComponent>().x() << "," << 
