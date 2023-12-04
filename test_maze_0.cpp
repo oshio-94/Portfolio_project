@@ -59,6 +59,7 @@ player = new GameObject("assets/player.png", 0, 0);
 enemy  = new GameObject("assets/enemy.png", 50, 50);
 map = new Map();
 
+newPlayer.addComponent<PositionComponent>();
 }
 
 void Game::handleEvents()
@@ -89,6 +90,9 @@ void Game::update()
 {
 	player->Update();
 	enemy->Update();
+	manager.update();
+	std::cout << newPlayer.getComponent<positionComponent>().x() << "," << 
+	    newPlayer.getComponent<positionComponent>().y() << std::endl;
 	/*cnt++;
 	destR.h = 32;
 	destR.w = 32;
