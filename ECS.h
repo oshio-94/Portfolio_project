@@ -52,10 +52,11 @@ class Entity{
 
     public:
         void update() {
-            for(auto& c : components) c->update();
-            for(auto& c : components) c->draw();        
+            for(auto& c : components) c->update();   
         }
-        void draw() {}
+        void draw() {
+            for(auto& c : components) c->draw();
+        }
         bool isActive() { return active; }
         void destroy() { active = false; }
 
