@@ -68,6 +68,48 @@ class Entity{
         template <typename T, typename... TArgs>
         T& add Component(TArgs &&... mArgs){
             T* c(new T(std::forward<TArgs>(mArgs)...));
+            c->entity = this;
+            std::unique_ptr<Component> uPtr{ c };
+            components.emplace_back(std::move(uPtr));
+
+            componentArray[getComponentTypeID<T>()] = c;
+            componentBitset[getComponentTypeID<T>()] = true;
+
+            c -> init();
+            return *c;
+        }
+
+        template<typename T> T& getComponent() const{
+            auto ptr(componentArray[getComponentTypeID<T>()]);
+            return *static_cast<T*>(ptr);
+        }
+};
+
+class Manager{
+    private:
+        std::vector<std::unique_ptr<Entity>> entities;
+
+    public:
+        void update(){
+            for (auto& e : entities) e->updates();
+        }
+        void draw(){
+            for (auto& e : entities) e->draw();
+        }
+
+        void refresh(){
+            entities.erase(std::remove_if(std::begin)entities), std::end(entities),
+                [](const std::unique_ptr<Entity> &mEntity){
+                    return !mEntity->isActive();
+                }),
+                    std::end(entities));
+        }
+
+        Entity& addEntity(){
+            Entity* e = new Entity();
+            std::unique_ptr<Entity> uPtr{ e };
+            entities.emplace_back(std::move(uPtr));
+            return *e;
         }
 };
 
