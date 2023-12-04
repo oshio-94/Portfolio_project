@@ -35,7 +35,7 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
      {
 	     std::cout << "Subsystems Initialised" << std::endl;
 
-	     window = SDL_CreateWindow(title, xpos, ypos, width, height, flags);
+	     window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, flags);
 	     if(window)
 	     {
 		 std::cout << "Window created" <<std::endl;
@@ -82,20 +82,22 @@ void Game::render()
 {
 	SDL_RenderClear(renderer);
 	map->DrawMap();
-	player->Render();
-	enemy->Render();
+	manager.draw();
+	//player->Render();
+	//enemy->Render();
 	/*SDL_RenderCopy(renderer, playerTex, NULL, &destR);*/
 	SDL_RenderPresent(renderer);
 }
 
 void Game::update()
 {
-	player->Update();
-	enemy->Update();
+	//player->Update();
+	//enemy->Update();
+	manager.refresh();
 	manager.update();
-	std::cout << newPlayer.getComponent<positionComponent>().x() << "," << 
+	/*std::cout << newPlayer.getComponent<positionComponent>().x() << "," << 
 	    newPlayer.getComponent<positionComponent>().y() << std::endl;
-	/*cnt++;
+	cnt++;
 	destR.h = 32;
 	destR.w = 32;
 	destR.x = cnt;
