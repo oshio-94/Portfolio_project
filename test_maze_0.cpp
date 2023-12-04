@@ -17,6 +17,8 @@ Map* map;
 Manager manager;
 
 SDL_Renderer* Game::renderer = nullptr;
+SDL_Event event;
+
 
 auto& player(manager.addEntity());
 
@@ -67,7 +69,7 @@ player.addComponent<SpriteComponent>("/Users/emike/Documents/Maze_Project/Maze_P
 
 void Game::handleEvents()
 {
-    SDL_Event event;
+	
     SDL_PollEvent(&event);
     switch (event.type) {
 	    case SDL_QUIT:
