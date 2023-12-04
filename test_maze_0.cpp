@@ -7,14 +7,11 @@
 
 #include "test_maze_0.hpp"
 #include "textureManager.h"
-#include "GameObject.h"
 #include "Map.h"
+#include "ECS/Components.h"
 
-#include "ECS.h"
-#include "Components.h"
-
-GameObject* player;
-GameObject* enemy;
+//GameObject* player;
+//GameObject* enemy;
 Map* map;
 
 SDL_Renderer* Game::renderer = nullptr;
