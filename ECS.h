@@ -5,8 +5,6 @@
 //  Created by Ryomen_Sukuna on 04/12/2023.
 //
 #pragma once
-#ifndef ECS_h
-#define ECS_h
 #include <memory>
 #include <vector>
 #include <iostream>
@@ -112,14 +110,3 @@ class Manager{
             return *e;
         }
 };
-
-
-
-
-
-
-
-
-
-
-#endif /* ECS_h */
