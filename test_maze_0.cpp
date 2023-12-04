@@ -95,6 +95,10 @@ void Game::update()
 	//enemy->Update();
 	manager.refresh();
 	manager.update();
+
+	if(player.getComponent<PositionComponent>().x() > 100){
+		player.getComponent<SpriteComponent>().setTex("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/enemy.png")
+	}
 	/*std::cout << newPlayer.getComponent<positionComponent>().x() << "," << 
 	    newPlayer.getComponent<positionComponent>().y() << std::endl;
 	cnt++;
