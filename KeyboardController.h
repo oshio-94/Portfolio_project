@@ -1,4 +1,4 @@
-#pragma once;
+#pragma once
 
 #include "test_maze_0.hpp"
 #include "ECS.h"
@@ -10,9 +10,9 @@ class KeyboardController : public Component{
         void init() override {
             transform = &entity->getComponent<TransformComponent>();
         }
-        void update() overide{
-            if(Game::event.type == SDL_KEYDOWN){
-                switch (Game::event.keysym.sym){
+        void update() override{
+            if (Game::event.type == SDL_KEYDOWN){
+                switch (Game::event.key.keysym.sym){
                     case SDLK_w:
                         transform->velocity.y = -1;
                         break;
@@ -22,15 +22,15 @@ class KeyboardController : public Component{
                     case SDLK_d:
                         transform->velocity.x = 1;
                         break;
-                    case SDLK_D:
+                    case SDLK_s:
                         transform->velocity.y = 1;
                         break;
                     default:
                         break;
                 }
             }
-            if(Game::event.type == SDL_KEYUP){
-                switch (Game::event.keysym.sym){
+            if (Game::event.type == SDL_KEYUP){
+                switch (Game::event.key.keysym.sym){
                     case SDLK_w:
                         transform->velocity.y = 0;
                         break;
@@ -40,7 +40,7 @@ class KeyboardController : public Component{
                     case SDLK_d:
                         transform->velocity.x = 0;
                         break;
-                    case SDLK_D:
+                    case SDLK_s:
                         transform->velocity.y = 0;
                         break;
                     default:
