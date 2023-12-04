@@ -13,10 +13,11 @@
 //GameObject* player;
 //GameObject* enemy;
 Map* map;
+Manager manager;
 
 SDL_Renderer* Game::renderer = nullptr;
-Manager manager;
-auto& newPlayer(manager.addEntity());
+
+auto& player(manager.addEntity());
 
 Game::Game()
 {}
@@ -52,11 +53,14 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 	     isRunning = false;
      }
 
-player = new GameObject("assets/player.png", 0, 0);
-enemy  = new GameObject("assets/enemy.png", 50, 50);
+//player = new GameObject("assets/player.png", 0, 0);
+//enemy  = new GameObject("assets/enemy.png", 50, 50);
 map = new Map();
 
-newPlayer.addComponent<PositionComponent>();
+//ecs implementation
+player.addComponent<PositionComponent>();
+player.addComponent<SpriteComponent>();
+
 //newPlayer.getComponent<PositionComponent>().setPos(500, 500);
 }
 
