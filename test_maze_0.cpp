@@ -59,7 +59,7 @@ map = new Map();
 
 //ecs implementation
 player.addComponent<PositionComponent>();
-player.addComponent<SpriteComponent>();
+player.addComponent<SpriteComponent>("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/player.png");
 
 //newPlayer.getComponent<PositionComponent>().setPos(500, 500);
 }
