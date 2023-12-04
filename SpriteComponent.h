@@ -5,7 +5,7 @@
 
 class SpriteComponent : public Component{
     private:
-        TransformComponent *position;
+        TransformComponent *transform;
         SDL_Texture *texture;
         SDL_Rect srcRect, destRect;
 
