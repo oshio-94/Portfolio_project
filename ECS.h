@@ -14,6 +14,8 @@
 #include <algorithm>
 #include <bitset>
 
+class Component;
+class Entity;
 
 
 
