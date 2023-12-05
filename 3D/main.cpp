@@ -1,6 +1,7 @@
 #pragma once
 #include "test_maze_0.hpp"
 #include "Components.h"
+#include "3D.h"
 
 #define mapWidth 24
 #define mapHeight 24
