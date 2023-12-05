@@ -1,7 +1,7 @@
 #ifndef _quickcg_h_included
 #define _quickcg_h_included
 
-#include <SDL/SDL.h>
+#include <SDL2/SDL.h>
 
 #include <string>
 #include <sstream>
