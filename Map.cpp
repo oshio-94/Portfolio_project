@@ -29,6 +29,9 @@ Map::Map() {
     dirt = textureManager::LoadTexture("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/dirt.png");
     grass = textureManager::LoadTexture("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/grass.png");
     water = textureManager::LoadTexture("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/water.png");
+    wall = textureManager::LoadTexture("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/wall.png");
+    defaut = textureManager::LoadTexture("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/default.png");
+  
 
     LoadMap(lvl1);
 
@@ -69,6 +72,9 @@ void Map::DrawMap(){
                     break;
                 case 3:
                     textureManager::Draw(wall, src, dest);
+                    break;
+                case 4:
+                    textureManager::Draw(defaut, src, dest);
                     break;
                 default:
                     break;
