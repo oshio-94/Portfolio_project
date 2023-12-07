@@ -23,8 +23,8 @@ class SpriteComponent : public Component{
             transform = &entity->getComponent<TransformComponent>();
 
             srcRect.x = srcRect.y = 0;
-            srcRect.w = srcRect.h = 32;
-            destRect.w = destRect.h = 64;
+            srcRect.w = srcRect.h = 16;
+            destRect.w = destRect.h = 32;
         }
 
         void update() override {
