@@ -1,5 +1,6 @@
 #include "textureManager.h"
 
+// Loads texture surfaces
 SDL_Texture* textureManager::LoadTexture(const char* texture)
 {
     SDL_Surface* tempSurface = IMG_Load(texture);
