@@ -18,6 +18,11 @@ $ git clone https://github.com/oshio-94/Portfolio_project.git
 * a for moving down                  
 * s for moving right
 
+## Compilation
+```sh
+$ gcc -Wall -Werror -Wextra main.cpp -w -lSDL2 -o main;
+``
+
 ## Files
 All the following files are written in C++
 
