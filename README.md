@@ -14,9 +14,9 @@ $ git clone https://github.com/oshio-94/Portfolio_project.git
 ## Usage
 ### Keyboard Controls
 * w for moving up                    
-* k for moving left
-* a for moving down                  
-* s for moving right
+* d for moving right
+* a for moving left                  
+* s for moving down
 
 ## Compilation
 ```sh
