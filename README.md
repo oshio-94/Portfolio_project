@@ -12,8 +12,10 @@ The Maze Project is a simple 3D game that handles keyboard/mouse input in order 
 $ git clone https://github.com/oshio-94/Portfolio_project.git
 ```
 ## Usage
-* w for moving up                    * k for moving left
-* a for moving down                  * s for moving right
+* w for moving up                    
+* k for moving left
+* a for moving down                  
+* s for moving right
 
 ## Files
 All the following files are written in C++
