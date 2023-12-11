@@ -27,19 +27,13 @@ All the following files are written in C++
 | `GameObject.h` | `` |
 | `test_maze_0.h` | `` |
 | `Vector2D.h` | `` |
-| `SpriteComponent.h` | `` |
+| `SpriteComponent.h` | `For handling the player avatar` |
 | `Map.h` | `For building the 2D Map` |
 | `Components.h` | `` |
 | `TransformComponent.h` | `` |
 | `main.cpp` | `The main C++ file` |
-| `` | `` |
-| `` | `` |
-| `` | `` |
-| `` | `` |
-| `` | `` |
-| `` | `` |
-| `` | `` |
-| `` | `` |
+| `assets` | `Picture and Textures` |
+| `ECS.h` | `` |
 | `` | `` |
 | `` | `` |
 | `` | `` |
