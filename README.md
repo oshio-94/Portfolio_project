@@ -12,8 +12,8 @@ All the following files are written in C++
 
 | Filename | Description |
 | -------- | ----------- |
-| `KeyboardController.h` | `   `|
-| `textureManager.h` |             |
+| `KeyboardController.h` | `` |
+| `textureManager.h` | `` |
 | `GameObject.h` | `` |
 | `test_maze_0.h` | `` |
 | `Vector2D.h` | `` |
