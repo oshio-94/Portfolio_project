@@ -25,6 +25,10 @@ $ gcc -Wall -Werror -Wextra main.cpp -w -lSDL2 -o main;
 ## Files
 All the following files are written in C++
 
+
+## Screenshot
+![The Maze Flow](link)
+
 | Filename | Description |
 | -------- | ----------- |
 | `KeyboardController.h` | `For handling the user inputs` |
