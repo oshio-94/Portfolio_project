@@ -27,7 +27,7 @@ All the following files are written in C++
 
 
 ## Screenshot
-![The Maze Flow](link)
+![The Maze Demo Screenshot](link)
 
 | Filename | Description |
 | -------- | ----------- |
