@@ -22,16 +22,16 @@ All the following files are written in C++
 
 | Filename | Description |
 | -------- | ----------- |
-| `KeyboardController.h` | `` |
-| `textureManager.h` | `` |
+| `KeyboardController.h` | `For handling the user inputs` |
+| `textureManager.h` | `For handling the uploading and managing of textures` |
 | `GameObject.h` | `` |
 | `test_maze_0.h` | `` |
 | `Vector2D.h` | `` |
 | `SpriteComponent.h` | `` |
-| `Map.h` | `` |
+| `Map.h` | `For building the 2D Map` |
 | `Components.h` | `` |
 | `TransformComponent.h` | `` |
-| `main.cpp` | `` |
+| `main.cpp` | `The main C++ file` |
 | `` | `` |
 | `` | `` |
 | `` | `` |
