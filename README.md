@@ -21,10 +21,6 @@ All the following files are written in C++
 | `Map.h` | `` |
 | `Components.h` | `` |
 | `TransformComponent.h` | `` |
-| `ECS.h` | `` |
-| `` | `` |
-| `` | `` |
-| `` | `` |
 | `` | `` |
 | `` | `` |
 | `` | `` |
