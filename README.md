@@ -14,6 +14,14 @@ All the following files are written in C++
 | -------- | ----------- |
 | `KeyboardController.h` | `   `|
 | `textureManager.h` |             |
+| `GameObject.h` | `` |
+| `test_maze_0.h` | `` |
+| `Vector2D.h` | `` |
+| `SpriteComponent.h` | `` |
+| `Map.h` | `` |
+| `Components.h` | `` |
+| `TransformComponent.h` | `` |
+| `ECS.h` | `` |
 | `` | `` |
 | `` | `` |
 | `` | `` |
@@ -29,16 +37,3 @@ All the following files are written in C++
 | `` | `` |
 | `` | `` |
 | `` | `` |
-| `` | `` |
-| `` | `` |
-| `` | `` |
-| `` | `` |
-| `` | `` |
-| `` | `` |
-| `` | `` |
-| `` | `` |
-
-| `` | `` |
-
-| `` | `` |
-
