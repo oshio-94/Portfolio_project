@@ -4,7 +4,7 @@ The Maze Project is a simple 3D game that handles keyboard/mouse input in order 
 
 ## Technology
 * C++ was used as the core programming language to handle all the core functions.
-* SDL was used in order to generate the window, lectures and also handle user input (keyboard, mouse audio).
+* SDL was used in order to generate the window, lectures and also handle user input (keyboard, mouse, audio).
 * Raycasting was used in order to render a 3D perspective from the 2D map.
 
 ## Installation
