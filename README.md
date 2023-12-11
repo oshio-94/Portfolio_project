@@ -26,7 +26,7 @@ $ gcc -Wall -Werror -Wextra main.cpp -w -lSDL2 -o main;
 All the following files are written in C++
 
 ## Screenshots
-![The Maze Demo Screenshot](https://i.imgur.com/t0MxNni.png)
+![The Maze Demo Screenshot](link)
 
 | Filename | Description |
 | -------- | ----------- |
