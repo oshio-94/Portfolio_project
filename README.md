@@ -7,6 +7,10 @@ The Maze Project is a simple 3D game that handles keyboard/mouse input in order 
 * SDL was used in order to generate the window, lectures and also handle user input (keyboard, mouse audio).
 * Raycasting was used in order to render a 3D perspective from the 2D map.
 
+## Installation
+```sh
+$ git clone https://github.com/oshio-94/Portfolio_project.git
+```
 ## Files
 All the following files are written in C++
 
