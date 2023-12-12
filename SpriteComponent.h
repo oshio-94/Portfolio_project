@@ -15,7 +15,7 @@ class SpriteComponent : public Component{
         SpriteComponent(const char* path){
             setTex(path);
         }
-        
+
         ~SpriteComponent(){
             SDL_DestroyTexture(texture);
         }
@@ -28,13 +28,16 @@ class SpriteComponent : public Component{
             transform = &entity->getComponent<TransformComponent>();
 
             srcRect.x = srcRect.y = 0;
-            srcRect.w = srcRect.h = 16;
-            destRect.w = destRect.h = 32;
+            srcRect.w = transform->width
+            srcRect.h = transform->height;
+            //destRect.w = destRect.h = 32;
         }
 
         void update() override {
             destRect.x = (int)transform->position.x;
             destRect.y = (int)transform->position.y;
+            destRect.w = transorm->width * transform->scale;
+            destRect.h = transorm->height * transform->scale;
         }
         
         void draw() override {

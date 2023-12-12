@@ -15,6 +15,12 @@ class ColliderComponent : public Component {
         }
         transform = &entity->getComponent<TransformComponent>();
     }
-
     
+    void update() override{
+        collider.x = transform->position.x;
+        collider.y = transform->position.y;
+        collider.w = transform->width * transform->scale;
+        collider.h = transform->height * transform->scale;
+    }
+
 };
