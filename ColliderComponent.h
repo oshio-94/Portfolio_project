@@ -9,6 +9,10 @@ class ColliderComponent : public Component {
 
     TransformComponent* transform;
 
+    ColliderComponent(std::string t){
+        tag = t;
+    }
+
     void init() override{
         if(!entity->hascomponent<TransformComponent>()){
             entity->addComponent<TransformCompoenet>();
