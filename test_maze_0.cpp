@@ -32,11 +32,11 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
      if(fullscreen)
      {
 	     flags = SDL_WINDOW_FULLSCREEN;
-     }
+     } //Initialize SDL
      if(SDL_Init(SDL_INIT_EVERYTHING) == 0)
      {
 	     std::cout << "Subsystems Initialised" << std::endl;
-
+         //create window
 	     window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, flags);
 	     if(window)
 	     {
@@ -111,7 +111,7 @@ void Game::update()
 	destR.x = cnt;
 	std::cout << cnt << std::endl;*/
 }
-
+//Destroy Window, Quit SDL subsystems
 void Game::clean()
 {
 	SDL_DestroyWindow(window);
