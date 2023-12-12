@@ -28,7 +28,7 @@ class SpriteComponent : public Component{
             transform = &entity->getComponent<TransformComponent>();
 
             srcRect.x = srcRect.y = 0;
-            srcRect.w = transform->width
+            srcRect.w = transform->width;
             srcRect.h = transform->height;
             //destRect.w = destRect.h = 32;
         }
