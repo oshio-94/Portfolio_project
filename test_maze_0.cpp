@@ -10,6 +10,7 @@
 #include "Map.h"
 #include "Components.h"
 #include "Vector2D.h"
+#include "Collision.h"
 
 //GameObject* player;
 //GameObject* enemy;
@@ -20,6 +21,7 @@ SDL_Renderer* Game::renderer = nullptr;
 SDL_Event Game::event;
 
 auto& player(manager.addEntity());
+auto& wall(manager.addEntity());
 
 Game::Game()
 {}
@@ -63,6 +65,14 @@ map = new Map();
 player.addComponent<TransformComponent>();
 player.addComponent<SpriteComponent>("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/player.png");
 player.addComponent<KeyboardController>();
+player.addComponent<ColliderController>(player);
+
+wall.addComponent<TransformComponent>(300.0f, 300.0f, 300, 20, 1);
+wall.addComponent<SpriteComponent>("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/dirt.png");
+wall.addComponent<ColliderComponent>("wall");
+
+
+
 
 //newPlayer.getComponent<PositionComponent>().setPos(500, 500);
 }

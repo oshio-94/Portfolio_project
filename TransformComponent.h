@@ -25,6 +25,14 @@ class TransformComponent : public Component{
             position.y = y;
         }
 
+        TransformComponent(float x, float y, int h, int w, sc){
+            position.x = x;
+            position.y = y;
+            height = h;
+            width = w;
+            scale = sc;
+        }
+
         void init() override{
             velocity.x = 0;
             velocity.y = 0;
