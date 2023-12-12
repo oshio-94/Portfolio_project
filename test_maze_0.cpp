@@ -108,6 +108,10 @@ void Game::update()
 	//enemy->Update();
 	manager.refresh();
 	manager.update();
+
+	if(Collision::AABB(player.getComponent<ColliderComponent>().collider, wall.getComponent<ColliderComponent>().collider)){
+		std::cout << "Wall hit!" << std::endl;
+	}
 	/*player.getComponent<TransformComponent>().position.Add(Vector2D(5, 0));
 
 	if(player.getComponent<TransformComponent>().position.x() > 100){
