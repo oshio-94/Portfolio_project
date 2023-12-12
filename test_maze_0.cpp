@@ -3,8 +3,6 @@
 //  Maze_Project
 //
 //  Created by Ryomen_Sukuna on 25/11/2023.
-//
-
 #include "test_maze_0.hpp"
 #include "textureManager.h"
 #include "Map.h"
@@ -65,14 +63,11 @@ map = new Map();
 player.addComponent<TransformComponent>(2);
 player.addComponent<SpriteComponent>("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/player.png");
 player.addComponent<KeyboardController>();
-player.addComponent<ColliderController>(player);
+player.addComponent<ColliderController>("player");
 
 wall.addComponent<TransformComponent>(300.0f, 300.0f, 300, 20, 1);
 wall.addComponent<SpriteComponent>("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/dirt.png");
 wall.addComponent<ColliderComponent>("wall");
-
-
-
 
 //newPlayer.getComponent<PositionComponent>().setPos(500, 500);
 }
