@@ -14,7 +14,7 @@ class ColliderComponent : public Component {
     }
 
     void init() override{
-        if(!entity->hascomponent<TransformComponent>()){
+        if(!entity->hasComponent<TransformComponent>()){
             entity->addComponent<TransformCompoenet>();
         }
         transform = &entity->getComponent<TransformComponent>();
