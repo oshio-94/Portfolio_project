@@ -20,7 +20,7 @@ class TransformComponent : public Component{
             position.y = 0.0f;
         }
 
-        TransformComponent( int sc){
+        TransformComponent( int sc ){
             position.x = 0.0f;
             position.y = 0.0f;
             scale = sc;
