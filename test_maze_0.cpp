@@ -62,7 +62,7 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 map = new Map();
 
 //ecs implementation
-player.addComponent<TransformComponent>();
+player.addComponent<TransformComponent>(2);
 player.addComponent<SpriteComponent>("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/player.png");
 player.addComponent<KeyboardController>();
 player.addComponent<ColliderController>(player);
