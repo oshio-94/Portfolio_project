@@ -4,6 +4,7 @@
 #include <SDL2/SDL.h>
 #include "ECS.h"
 
+//Handles the detection of Collisions
 class ColliderComponent : public Component
 {
 public:
