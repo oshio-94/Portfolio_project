@@ -3,6 +3,8 @@
 #include "Components.h"
 #include "Vector2D.h"
 
+
+//Class components for handling the movement and size of the players avatar
 class TransformComponent : public Component{
 
     public:

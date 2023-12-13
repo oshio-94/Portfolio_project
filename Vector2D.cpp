@@ -1,5 +1,7 @@
 #include "Vector2D.h"
 
+
+// Monitoring and handling the position and speed of the avatar
 Vector2D::Vector2D(){
     x = 0.0f;
     y = 0.0f;
