@@ -1,9 +1,12 @@
 #pragma once
 
 #include <string>
-#include "SDL2/SDL.h"
+#include <SDL2/SDL.h>
+#include "ECS.h"
 
-class ColliderComponent : public Component {
+class ColliderComponent : public Component
+{
+public:
     SDL_Rect collider;
     std::string tag;
 
@@ -13,14 +16,14 @@ class ColliderComponent : public Component {
         tag = t;
     }
 
-    void init() override{
+    void init() override {
         if(!entity->hasComponent<TransformComponent>()){
             entity->addComponent<TransformComponent>();
         }
         transform = &entity->getComponent<TransformComponent>();
     }
     
-    void update() override{
+    void update() override {
         collider.x = static_cast<int>(transform->position.x);
         collider.y = static_cast<int>(transform->position.y);
         collider.w = transform->width * transform->scale;

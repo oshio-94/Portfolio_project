@@ -1,8 +1,8 @@
+#pragma once
 #include "test_maze_0.hpp"
 
 class textureManager {
-
-    public:
+public:
         static SDL_Texture* LoadTexture(const char* fileName);
         static void Draw(SDL_Texture* tex, SDL_Rect src, SDL_Rect dest);
 };

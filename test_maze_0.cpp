@@ -63,7 +63,7 @@ map = new Map();
 player.addComponent<TransformComponent>(2);
 player.addComponent<SpriteComponent>("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/player.png");
 player.addComponent<KeyboardController>();
-player.addComponent<ColliderController>("player");
+player.addComponent<ColliderComponent>("player");
 
 wall.addComponent<TransformComponent>(300.0f, 300.0f, 300, 20, 1);
 wall.addComponent<SpriteComponent>("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/dirt.png");

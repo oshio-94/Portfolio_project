@@ -61,8 +61,9 @@ class Entity{
         bool isActive() { return active; }
         void destroy() { active = false; }
 
-        template <typename T> bool hasComponent() const{
-            return componentBitset[getComponentID<T>];
+        template <typename T> bool hasComponent() const
+        {
+            return componentBitset[getComponentID<T>()];
         }
 
         template <typename T, typename... TArgs>
