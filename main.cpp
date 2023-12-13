@@ -1,6 +1,6 @@
 #include "test_maze_0.hpp"
 
-
+// main game loop and functions
 Game *game = nullptr;
 
 int main(int argc, const char * arv[]) {
