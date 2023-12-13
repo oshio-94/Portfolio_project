@@ -40,6 +40,3 @@ All the following files are written in C++
 | `main.cpp` | `The main C++ file` |
 | `assets` | `Picture and Textures` |
 | `ECS.h` | `Handling the Entity Component Systems` |
-| `` | `` |
-| `` | `` |
-| `` | `` |
