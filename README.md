@@ -32,16 +32,14 @@ All the following files are written in C++
 | -------- | ----------- |
 | `KeyboardController.h` | `For handling the user inputs` |
 | `textureManager.h` | `For handling the uploading and managing of textures` |
-| `GameObject.h` | `` |
-| `test_maze_0.h` | `` |
-| `Vector2D.h` | `` |
+| `GameObject.h` | `For handling the Game object rendering` |
+| `test_maze_0.h` | `Contains most logical functions` |
+| `Vector2D.h` | `Movement of Sprite` |
 | `SpriteComponent.h` | `For handling the player avatar` |
 | `Map.h` | `For building the 2D Map` |
-| `Components.h` | `` |
-| `TransformComponent.h` | `` |
 | `main.cpp` | `The main C++ file` |
 | `assets` | `Picture and Textures` |
-| `ECS.h` | `` |
+| `ECS.h` | `Handling the Entity Component Systems` |
 | `` | `` |
 | `` | `` |
 | `` | `` |
