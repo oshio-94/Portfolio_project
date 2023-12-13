@@ -43,4 +43,4 @@ All the following files are written in C++
 
 ## Author :black_nib:
 
-- **Oshio Ikhanoba** <(https://github.com/oshio-94)>
+- **Oshio Ikhanoba** <[Oshio](https://github.com/oshio-94)>
