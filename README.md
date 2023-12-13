@@ -26,7 +26,7 @@ $ gcc -Wall -Werror -Wextra main.cpp -w -lSDL2 -o main;
 All the following files are written in C++
 
 ## Screenshots & Demo
-![The Maze Demo Screenshot](https://youtu.be/4LFtZJnbL8E)
+![The Maze Demo](https://youtu.be/4LFtZJnbL8E)
 
 | Filename | Description |
 | -------- | ----------- |
@@ -40,3 +40,7 @@ All the following files are written in C++
 | `main.cpp` | `The main C++ file` |
 | `assets` | `Picture and Textures` |
 | `ECS.h` | `Handling the Entity Component Systems` |
+
+## Author :black_nib:
+
+- **Oshio Ikhanoba** <(https://github.com/oshio-94)>
