@@ -11,6 +11,10 @@
 #include <SDL2_image/SDL_image.h>
 #include <stdio.h>
 #include <iostream>
+#include <vector>
+
+class ColliderComponent;
+
 
 class Game {
 
@@ -26,6 +30,8 @@ public:
 
     static SDL_Renderer *renderer;
     static SDL_Event event;
+    //list of colliders
+    static std::vector<ColliderComponent*> collider
 
     bool running() {return isRunning;}
 
