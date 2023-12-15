@@ -22,6 +22,12 @@ std::vector<ColliderComponent*> Game::colliders;
 auto& player(manager.addEntity());
 auto& wall(manager.addEntity());
 
+auto& tile0(manager.addEntity());
+auto& tile1(manager.addEntity());
+auto& tile2(manager.addEntity());
+auto& tile3(manager.addEntity());
+auto& tile4(manager.addEntity());
+
 Game::Game()
 {}
 Game::~Game()
@@ -60,7 +66,18 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 //enemy  = new GameObject("assets/enemy.png", 50, 50);
 map = new Map();
 
-//ecs implementation
+//ECS implementation
+
+//size and position of tile
+tile0.addComponent<TileComponent>(200, 200, 32, 32, 0);
+tile1.addComponent<TileComponent>(250, 250, 32, 32, 1);
+tile2.addComponent<TileComponent>(100, 100, 32, 32, 2);
+tile3.addComponent<TileComponent>(220, 220, 32, 32, 3);
+tile3.addComponent<ColliderComponent>("wall");
+tile4.addComponent<TileComponent>(120, 120, 32, 32, 4);
+tile4.addComponent<ColliderComponent>("defaut");
+
+
 player.addComponent<TransformComponent>(2);
 player.addComponent<SpriteComponent>("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/player.png");
 player.addComponent<KeyboardController>();
