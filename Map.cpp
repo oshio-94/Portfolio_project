@@ -20,7 +20,7 @@ void Map::LoadMap(std::string path, int sizeX, int sizeY){
         for(int x = 0; x < sizeX; x++){
             mapFile.get(tile);
             Game::AddTile(atoi(&tile), x * 32, y * 32);
-            map.File.ignore();
+            mapFile.ignore();
         }
     }
 

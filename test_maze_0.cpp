@@ -109,7 +109,7 @@ void Game::handleEvents()
 void Game::render()
 {
 	SDL_RenderClear(renderer);
-	map->DrawMap();
+	//map->DrawMap();
 	manager.draw();
 	//player->Render();
 	//enemy->Render();
