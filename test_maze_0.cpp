@@ -107,7 +107,7 @@ void Game::handleEvents()
 void Game::render()
 {
 	SDL_RenderClear(renderer);
-	map->DrawMap();
+	//map->DrawMap();
 	manager.draw();
 	//player->Render();
 	//enemy->Render();
@@ -122,11 +122,14 @@ void Game::update()
 	manager.refresh();
 	manager.update();
 
-	if(Collision::AABB(player.getComponent<ColliderComponent>().collider, wall.getComponent<ColliderComponent>().collider)){
-		player.getComponent<TransformComponent>().scale = 1;
-		player.getComponent<TransformComponent>().velocity * -1;
-		std::cout << "Wall hit!" << std::endl;
-	}
+	for (auto cc : colliders){
+		/*if(Collision::AABB(player.getComponent<ColliderComponent>().collider, wall.getComponent<ColliderComponent>().collider)){
+			player.getComponent<TransformComponent>().scale = 1;
+		    player.getComponent<TransformComponent>().velocity * -1;
+		    std::cout << "Wall hit!" << std::endl;
+		}*/
+		Collision::AABB(player.getComponent<ColliderComponent>(), *cc);
+    }
 	/*player.getComponent<TransformComponent>().position.Add(Vector2D(5, 0));
 
 	if(player.getComponent<TransformComponent>().position.x() > 100){
