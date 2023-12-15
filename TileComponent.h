@@ -14,7 +14,7 @@ class TileComponent : public Component{
         int tileID;
         char* path;
 
-        TileComponent() default;
+        TileComponent() = default;
 
         TileComponent(int x, int y, int w, int h, int id){
             tileRect.x = x;
@@ -25,7 +25,7 @@ class TileComponent : public Component{
 
             switch (tileID){
                 case 0:
-                    path: "Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/water.png";
+                    path = "Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/water.png";
                     break;
                 case 1:
                     path = "/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/grass.png";
@@ -45,7 +45,7 @@ class TileComponent : public Component{
         // initialise class
         //add transform component to tile
         void init() override{
-            entity->addComponent<TransformComponent>((float)tileRect.x, (float)tileRect.y, tile.Rect.w, tileRect.h, 1);
+            entity->addComponent<TransformComponent>((float)tileRect.x, (float)tileRect.y, tileRect.w, tileRect.h, 1);
             transform = &entity->getComponent<TransformComponent>();
 
             entity->addComponent<SpriteComponent>(path);

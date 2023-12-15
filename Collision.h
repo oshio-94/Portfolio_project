@@ -1,6 +1,8 @@
 #pragma once
 #include <SDL2/SDL.h>
 
+class ColliderComponent;
+
 class Collision {
     public:
     //check the position of each rctangle and make sure theyre within boundaries

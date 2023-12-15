@@ -2,7 +2,7 @@
 
 #include <string>
 #include <SDL2/SDL.h>
-#include "ECS.h"
+#include "Components.h"
 
 //Handles the detection of Collisions
 class ColliderComponent : public Component

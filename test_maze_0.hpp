@@ -31,7 +31,7 @@ public:
     static SDL_Renderer *renderer;
     static SDL_Event event;
     //list of colliders
-    static std::vector<ColliderComponent*> collider;
+    static std::vector<ColliderComponent*> colliders;
 
     bool running() {return isRunning;}
 
