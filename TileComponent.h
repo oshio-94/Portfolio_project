@@ -25,13 +25,13 @@ class TileComponent : public Component{
 
             switch (tileID){
                 case 0:
-                    path = "Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/grass.png";
+                    path = "/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/dirt.png";
                     break;
                 case 1:
-                    path = "/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/water.png";
+                    path = "/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/grass.png";
                     break;
                 case 2:
-                    path = "/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/dirt.png";
+                    path = "/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/water.png";
                     break; 
                 case 3:
                     path = "/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/wall.png";

@@ -77,7 +77,7 @@ tile3.addComponent<ColliderComponent>("wall");
 tile4.addComponent<TileComponent>(120, 120, 32, 32, 4);
 tile4.addComponent<ColliderComponent>("defaut"); */
 
-Map::LoadMap("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/pyxel.map", 32 , 32);
+Map::LoadMap("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/pyxel.map", 32, 32);
 
 
 player.addComponent<TransformComponent>(2);
