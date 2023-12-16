@@ -12,7 +12,7 @@ class TileComponent : public Component{
 
         SDL_Rect tileRect;
         int tileID;
-        char* path;
+        const char* path;
 
         TileComponent() = default;
 

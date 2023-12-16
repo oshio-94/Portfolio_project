@@ -12,7 +12,7 @@ int main(int argc, const char * arv[]) {
 
 	game = new Game();
 
-	game->init("Maze-Challenge", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 640, false);
+	game->init("Maze-Challenge", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 960, 640, false);
 
 // Implement game loop
 	while (game->running()) {
