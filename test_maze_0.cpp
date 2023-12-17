@@ -22,6 +22,13 @@ std::vector<ColliderComponent*> Game::colliders;
 auto& player(manager.addEntity());
 auto& wall(manager.addEntity());
 
+enum groupLabels : std::size_t{
+	groupMap,
+	groupPlayers,
+	groupEnemies,
+	groupColliders
+};
+
 Game::Game()
 {}
 Game::~Game()
@@ -78,10 +85,12 @@ player.addComponent<TransformComponent>(2);
 player.addComponent<SpriteComponent>("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/player.png");
 player.addComponent<KeyboardController>();
 player.addComponent<ColliderComponent>("player");
+player.addGroup(groupPlayers);
 
 wall.addComponent<TransformComponent>(300.0f, 300.0f, 300, 20, 1);
-wall.addComponent<SpriteComponent>("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/dirt.png");
+wall.addComponent<SpriteComponent>("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/wall.png");
 wall.addComponent<ColliderComponent>("wall");
+wall.addGroup(groupMap);
 
 //newPlayer.getComponent<PositionComponent>().setPos(500, 500);
 }
@@ -100,17 +109,6 @@ void Game::handleEvents()
     }
 }
 
-void Game::render()
-{
-	SDL_RenderClear(renderer);
-	//map->DrawMap();
-	manager.draw();
-	//player->Render();
-	//enemy->Render();
-	/*SDL_RenderCopy(renderer, playerTex, NULL, &destR);*/
-	SDL_RenderPresent(renderer);
-}
-
 void Game::update()
 {
 	//player->Update();
@@ -126,19 +124,19 @@ void Game::update()
 		}*/
 		Collision::AABB(player.getComponent<ColliderComponent>(), *cc);
     }
-	/*player.getComponent<TransformComponent>().position.Add(Vector2D(5, 0));
-
-	if(player.getComponent<TransformComponent>().position.x() > 100){
-        player.getComponent<SpriteComponent>().setTex("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/enemy.png");
-    }
-	std::cout << newPlayer.getComponent<positionComponent>().x() << "," << 
-	    newPlayer.getComponent<positionComponent>().y() << std::endl;
-	cnt++;
-	destR.h = 32;
-	destR.w = 32;
-	destR.x = cnt;
-	std::cout << cnt << std::endl;*/
 }
+
+void Game::render()
+{
+	SDL_RenderClear(renderer);
+	//map->DrawMap();
+	manager.draw();
+	//player->Render();
+	//enemy->Render();
+	/*SDL_RenderCopy(renderer, playerTex, NULL, &destR);*/
+	SDL_RenderPresent(renderer);
+}
+
 //Destroy Window, Quit SDL subsystems
 void Game::clean()
 {
@@ -151,4 +149,5 @@ void Game::clean()
 void Game::AddTile(int id, int x, int y){
 	auto& tile(manager.addEntity());
 	tile.addComponent<TileComponent>(x, y, 32, 32, id);
+	tile.addGroup(groupMap);
 }
