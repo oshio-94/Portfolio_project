@@ -5,14 +5,14 @@
 
 
 Map::Map() {
-
 }
 
 Map::~Map(){
-
 }
 void Map::LoadMap(std::string path, int sizeX, int sizeY){
+    //each number in file read as a character
     char tile;
+    //object to store the file 
     std::fstream mapFile;
     mapFile.open(path);
 
@@ -27,7 +27,7 @@ void Map::LoadMap(std::string path, int sizeX, int sizeY){
     mapFile.close();
 }
 
-/* oid Map::DrawMap(){
+/* void Map::DrawMap(){
     int type = 0;
     for (int row = 0; row < 20; row++){
         for(int column = 0; column < 25; column++){
