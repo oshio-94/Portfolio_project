@@ -16,9 +16,12 @@ void Map::LoadMap(std::string path, int sizeX, int sizeY){
     std::fstream mapFile;
     mapFile.open(path);
 
+
+//loop to make tile for each character
     for(int y = 0; y < sizeY; y++){
         for(int x = 0; x < sizeX; x++){
             mapFile.get(tile);
+            //atoi to covert char to int
             Game::AddTile(atoi(&tile), x * 32, y * 32);
             mapFile.ignore();
         }
