@@ -22,12 +22,6 @@ std::vector<ColliderComponent*> Game::colliders;
 auto& player(manager.addEntity());
 auto& wall(manager.addEntity());
 
-/* auto& tile0(manager.addEntity());
-auto& tile1(manager.addEntity());
-auto& tile2(manager.addEntity());
-auto& tile3(manager.addEntity());
-auto& tile4(manager.addEntity());
-*/
 Game::Game()
 {}
 Game::~Game()
