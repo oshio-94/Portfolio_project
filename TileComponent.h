@@ -39,6 +39,8 @@ class TileComponent : public Component{
                 /*case 4:
                     path = "/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/default.png";
                     break;*/
+                default:
+                    break;
             }
 
         }
