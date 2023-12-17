@@ -126,14 +126,12 @@ void Game::update()
     }
 }
 
+
+
 void Game::render()
 {
 	SDL_RenderClear(renderer);
-	//map->DrawMap();
 	manager.draw();
-	//player->Render();
-	//enemy->Render();
-	/*SDL_RenderCopy(renderer, playerTex, NULL, &destR);*/
 	SDL_RenderPresent(renderer);
 }
 
