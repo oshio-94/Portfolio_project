@@ -81,7 +81,7 @@ tile4.addComponent<ColliderComponent>("defaut"); */
 Map::LoadMap("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/pyxel.map", 32, 32);
 
 
-player.addComponent<TransformComponent>(2);
+player.addComponent<TransformComponent>(1);
 player.addComponent<SpriteComponent>("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/player.png");
 player.addComponent<KeyboardController>();
 player.addComponent<ColliderComponent>("player");
