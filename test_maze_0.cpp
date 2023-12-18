@@ -87,9 +87,9 @@ player.addComponent<KeyboardController>();
 player.addComponent<ColliderComponent>("player");
 player.addGroup(groupPlayers);
 
-wall.addComponent<TransformComponent>(300.0f, 300.0f, 300, 20, 1);
-wall.addComponent<SpriteComponent>("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/wall.png");
-wall.addComponent<ColliderComponent>("wall");
+//wall.addComponent<TransformComponent>(300.0f, 300.0f, 300, 20, 1);
+//wall.addComponent<SpriteComponent>("/Users/emike/Documents/Maze_Project/Maze_Project/Maze_Project/assets/wall.png");
+//wall.addComponent<ColliderComponent>("wall");
 wall.addGroup(groupMap);
 
 //newPlayer.getComponent<PositionComponent>().setPos(500, 500);
